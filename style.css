@@ -1,0 +1,66 @@
+:root {
+    --page-sidebar: #509bff;
+    --page-right: #f3f3f3;
+}
+
+/* page layout  */
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 100vh;
+
+}
+
+.page-sidebar {
+    background-color: var(--page-sidebar);
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 20px;
+    /* -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center; */
+    padding: 1em;
+    /* NEW to add the gap at top */
+}
+
+.page-sidebar>* {
+    background-color: aliceblue;
+    height: 200px;
+
+}
+
+.page-right {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    background-color: var(--page-right);
+
+}
+
+.page-right>* {
+    padding: 1em;
+}
+
+.header-page {
+    background-color: antiquewhite;
+}
+
+.main {
+    background-color: plum;
+}
+
+/* The grid_page_container has two columns 
+The container's second column is 4 times larger than the first column
+- HEADER
+Header-Top 
+The header elements has 2 main divs (top) + (bottom)
+The header will have flex-box with space around- center both horezontally and vertuculary
+The header Top has two divs --> flex box  --> space between
+The header Top 2 div will have flex-box with space around 
+- Header bottom 
+The header bttom has flex-> space between
+The header  */
+
+img {
+    background-color: #f3f3f3;
+}
